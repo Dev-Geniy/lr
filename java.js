@@ -66,8 +66,6 @@ document.addEventListener("DOMContentLoaded", () => {
   task: "Сформулируйте 3 новые цели на следующий месяц.", 
   guide: "Регулярно пересматривайте свои цели и корректируйте их в зависимости от обстоятельств и полученных результатов."
 }
-
-        // ... Добавь все уроки сюда
     ];
 
     let firstVisit = localStorage.getItem("firstVisit");
@@ -83,18 +81,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const currentLessonIndex = Math.min(daysPassed, lessons.length - 1);
     const currentLesson = lessons[currentLessonIndex];
 
-    // Обновляем содержимое карточки
     document.getElementById("lessonTitle").innerText = currentLesson.title;
     document.getElementById("lessonDescription").innerText = currentLesson.description;
     document.getElementById("lessonTask").innerText = currentLesson.task;
     document.getElementById("lessonGuide").innerText = currentLesson.guide;
 
-    // Обновляем прогресс-бар
     const progressPercentage = ((currentLessonIndex + 1) / lessons.length) * 100;
     progressBar.style.width = `${progressPercentage}%`;
     progressText.innerText = `${currentLessonIndex + 1}/${lessons.length}`;
 
-    // Обработчик для переворота карточки
     howToBtn.addEventListener("click", () => {
         lessonCard.classList.add("flipped");
     });
@@ -103,7 +98,6 @@ document.addEventListener("DOMContentLoaded", () => {
         lessonCard.classList.remove("flipped");
     });
 
-    // Обновляем информацию о следующем уроке
     const nextLessonInfo = document.getElementById("nextLessonInfo");
     if (currentLessonIndex >= lessons.length - 1) {
         nextLessonInfo.innerText = "Вы завершили все 10 уроков! Продолжайте применять полученные знания.";
