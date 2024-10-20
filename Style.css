@@ -1,4 +1,3 @@
-/* Общие стили */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
@@ -13,7 +12,6 @@ body {
     text-align: center;
 }
 
-/* Стили для заголовка и логотипа */
 .intro h1 {
     font-size: 2.5em;
     color: #4f7ddf;
@@ -33,7 +31,6 @@ body {
     display: block;
 }
 
-/* Прогресс-бар */
 .progress-container {
     position: relative;
     width: 100%;
@@ -46,7 +43,7 @@ body {
 .progress-bar {
     position: relative;
     height: 100%;
-    width: 50%; /* Это значение будет обновляться динамически */
+    width: 50%;
     background-color: #4f7ddf;
     border-radius: 20px;
     transition: width 0.4s ease-in-out;
@@ -70,7 +67,6 @@ body {
     height: 30px;
 }
 
-/* Карточка */
 .card {
     perspective: 1000px;
     margin: 20px auto;
@@ -118,7 +114,6 @@ body {
     transform: rotateY(180deg);
 }
 
-/* Текст на карточке */
 .card h2 {
     font-size: 1.8em;
     margin-bottom: 10px;
@@ -129,7 +124,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* Кнопка переворота карточки */
 .flip-button {
     padding: 10px 20px;
     background-color: #4f7ddf;
@@ -147,7 +141,7 @@ body {
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
-    gap: 20px; /* Отступ между кнопками */
+    gap: 20px;
 }
 
 .promo-button {
@@ -168,78 +162,76 @@ body {
     background-color: #ffd633;
 }
 
-/* Добавляем отступ для контейнера с кнопками */
 .button-container {
-    margin-top: 10px; /* Отступ сверху от карточки */
+    margin-top: 10px;
     display: flex;
-    flex-direction: column; /* Меняем направление на вертикальное */
-    align-items: center; /* Центрируем кнопки по горизонтали */
-    width: 100%; /* Задаем ширину контейнера для кнопок */
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
-/* Стиль для кнопок */
 .promo-button {
     padding: 15px 25px;
     color: white;
     text-decoration: none;
     border-radius: 10px;
     font-size: 1.2em;
-    transition: transform 0.3s ease, background-color 0.3s ease; /* Плавный переход */
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .promo-button:hover {
-    transform: scale(0.9); /* Уменьшение при наведении */
-    background-color: #6fa0ef; /* Легкая смена цвета */
+    transform: scale(0.9);
+    background-color: #6fa0ef;
 }
 
 .header {
-    text-align: center; /* Центрируем текст */
-    margin: 60px 0; /* Добавим отступы сверху и снизу */
+    text-align: center;
+    margin: 60px 0;
 }
 
 .header h2 {
-    font-size: 1em; /* Размер заголовка */
-    color: #333; /* Цвет заголовка */
+    font-size: 1em;
+    color: #333;
 }
 .share-section {
-    text-align: center; /* Выравниваем текст по центру */
-    margin: 20px; /* Отступы для блока */
+    text-align: center;
+    margin: 20px;
 }
 
 .social-buttons {
-    display: flex; /* Используем flexbox для расположения кнопок */
-    flex-wrap: wrap; /* Позволяем кнопкам переходить на новую строку */
-    justify-content: center; /* Выравниваем кнопки по центру */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .social-button {
-    display: block; /* Делаем кнопки блочными для вертикального расположения */
-    width: 120px; /* Ширина кнопок */
-    margin: 10px; /* Отступы между кнопками */
-    padding: 10px; /* Внутренние отступы */
-    color: white; /* Цвет текста */
-    text-align: center; /* Выравнивание текста внутри кнопки */
-    border-radius: 5px; /* Скругление углов */
-    text-decoration: none; /* Убираем подчеркивание */
-    font-weight: bold; /* Жирный текст */
+    display: block;
+    width: 120px;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .social-button.facebook {
-    background-color: #3b5998; /* Цвет кнопки Facebook */
+    background-color: #3b5998;
 }
 
 .social-button.twitter {
-    background-color: #1da1f2; /* Цвет кнопки Twitter */
+    background-color: #1da1f2;
 }
 
 .social-button.telegram {
-    background-color: #0088cc; /* Цвет кнопки Telegram */
+    background-color: #0088cc;
 }
 
 .social-button.instagram {
-    background-color: #e1306c; /* Цвет кнопки Instagram */
+    background-color: #e1306c;
 }
 
 .social-button.linkedin {
-    background-color: #0077b5; /* Цвет кнопки LinkedIn */
+    background-color: #0077b5;
 }
