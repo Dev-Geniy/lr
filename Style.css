@@ -238,7 +238,7 @@ body {
 
 .twitter-icon {
         position: absolute;
-        top: 10px;
+        bottom: 10px;
         left: 50%;
         opacity: 0.25;
         width: 30px;
