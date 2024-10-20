@@ -236,18 +236,18 @@ body {
     background-color: #0077b5;
 }
 
-.twitter-icon {
-        position: absolute;
-        bottom: 10px;
-        left: 50%;
-        opacity: 0.25;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        transition: all 0.3s ease;
-    }
+        .twitter-icon {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            opacity: 0.15;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
 
-.twitter-icon:hover {
-        opacity: 1;
-        transform: scale(1.2);
-    }
+        .twitter-icon:hover {
+            opacity: 1;
+            transform: scale(1.2);
+        }
