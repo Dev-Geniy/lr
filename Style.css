@@ -235,3 +235,19 @@ body {
 .social-button.linkedin {
     background-color: #0077b5;
 }
+
+.twitter-icon {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        opacity: 0.25;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+    }
+
+.twitter-icon:hover {
+        opacity: 1;
+        transform: scale(1.2);
+    }
