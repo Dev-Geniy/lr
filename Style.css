@@ -75,6 +75,10 @@ body {
     height: 400px;
 }
 
+.card {
+    margin-bottom: 60px; /* Отступ после карточки */
+}
+
 .card-inner {
     width: 100%;
     height: 100%;
@@ -135,52 +139,6 @@ body {
 }
 
 .flip-button:hover {
-    background-color: #6fa0ef;
-}
-.button-container {
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.promo-button {
-    background-color: #ffcc00;
-    color: #333;
-    padding: 15px 25px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2em;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    text-align: center;
-    display: block;
-    flex: 1;
-}
-
-.promo-button:hover {
-    background-color: #ffd633;
-}
-
-.button-container {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-.promo-button {
-    padding: 15px 25px;
-    color: white;
-    text-decoration: none;
-    border-radius: 10px;
-    font-size: 1.2em;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.promo-button:hover {
-    transform: scale(0.9);
     background-color: #6fa0ef;
 }
 
